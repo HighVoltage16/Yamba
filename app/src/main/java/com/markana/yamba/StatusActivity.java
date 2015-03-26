@@ -68,22 +68,17 @@ public class StatusActivity extends ActionBarActivity implements OnClickListener
             Toast.makeText(StatusActivity.this, result, Toast.LENGTH_LONG).show();
         }
 
-        //Called when button is clicked
-        public void onClick(View view) {
-            String status = editText.getText().toString();
-            new PostToTwitter().execute(status);
-            Log.d(TAG, "onClicked");
-        }
     }
 
-    // Called when button is clicked
-    public void onClick(View v){
-        twitter.setStatus(editText.getText().toString());
+    //Called when button is clicked
+    public void onClick(View view) {
+        String status = editText.getText().toString();
+        new PostToTwitter().execute(status);
         Log.d(TAG, "onClicked");
     }
 
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_status, menu);
@@ -103,5 +98,5 @@ public class StatusActivity extends ActionBarActivity implements OnClickListener
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
