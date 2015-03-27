@@ -11,8 +11,14 @@
         android:textSize="30sp"
         android:layout_margin="10dp" android:text="@string/titleStatus"/>
 
-    <!-- Status EditText -->
+    <!-- Text Counter TextView-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:id="@+id/textCount" android:text="000"
+        android:layout_margin="10dp"/>
 
+    <!-- Status EditText -->
     <EditText android:layout_width="fill_parent"
         android:layout_height="0dp" android:layout_weight="1"
         android:hint="@string/hintText" android:id="@+id/editText"
@@ -21,11 +27,12 @@
 
         </EditText>
 
+    <!-- Update Button -->
     <Button android:layout_width="fill_parent"
         android:layout_height="wrap_content" android:text="@string/buttonUpdate"
         android:textSize="20sp" android:id="@+id/buttonUpdate">
 
         </Button>
 
-    <!-- Update Button -->
+
 </LinearLayout>
