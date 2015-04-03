@@ -3,13 +3,14 @@
 <!-- Main Layout of Status Activity -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent" android:background="@drawable/background">
 
     <!-- Title TextView-->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content" android:gravity="center"
         android:textSize="30sp"
-        android:layout_margin="10dp" android:text="@string/titleStatus"/>
+        android:layout_margin="10dp" android:text="@string/titleStatus"
+        android:background="@android:color/white"/>
 
     <!-- Text Counter TextView-->
     <TextView
@@ -23,7 +24,11 @@
         android:layout_height="0dp" android:layout_weight="1"
         android:hint="@string/hintText" android:id="@+id/editText"
         android:gravity="top|center_horizontal"
-        android:editable="true">
+        android:editable="true"
+        android:autoText="false"
+        android:focusableInTouchMode="true"
+        android:inputType="textCapSentences"
+        android:background="#cfff">
 
         </EditText>
 
