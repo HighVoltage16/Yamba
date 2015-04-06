@@ -9,10 +9,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="titleUsername" />
-    <string name="summaryUsername" />
-    <string name="titlePassword" />
-    <string name="summaryPassword" />
-    <string name="titleApiRoot" />
-    <string name="summaryApiRoot" />
+    <string name="titleUsername">Username</string>
+    <string name="summaryUsername">Username</string>
+    <string name="titlePassword">Password </string>
+    <string name="summaryPassword">Password</string>
+    <string name="titleApiRoot">API Root</string>
+    <string name="summaryApiRoot">API Root</string>
+    <string name="title_activity_prefs">PrefsActivity</string>
 </resources>
